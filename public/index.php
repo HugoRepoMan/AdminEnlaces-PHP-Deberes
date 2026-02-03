@@ -1,17 +1,11 @@
 <?php
-// public/index.php
 
-// Activación de errores (esto debe ir DENTRO de las etiquetas <?php)
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once __DIR__ . '/../framework/Database.php';
 
-// IMPORTANTE: Comentamos la base de datos para que no bloquee tu tarea
-// $db = new Database(); 
-
-// Detectar la ruta para cargar el controlador y la vista correcta
 $route = $_SERVER['REQUEST_URI'];
 
 if (strpos($route, '/links') !== false) {

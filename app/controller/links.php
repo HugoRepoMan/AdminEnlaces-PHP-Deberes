@@ -1,5 +1,4 @@
 <?php
-// app/controller/links.php
 $enlacesCategorizados = [
     "Herramientas de Desarrollo" => [
         ["url" => "https://git-scm.com/", "descripcion" => "Git"],
